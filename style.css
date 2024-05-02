@@ -521,7 +521,7 @@ footer .copyright{
 
 #page-header {
   background-image: url(img/banners/b9.png);
-  width: 105%;
+  width: 100%;
   height: 45vh;
   background-size: cover;
   display: flex;
@@ -532,7 +532,7 @@ footer .copyright{
 
 #page-header  h2 {
   font-size: 40px;
- color: rgb(2, 121, 2);
+ color: rgb(249, 249, 249);
 }
 #page-header p{
   color: white;
@@ -617,7 +617,82 @@ footer .copyright{
   background-image: url(img/banners/b8.png);
   width: 100%;
   height: 40vh;
+ 
 }
+
+#page-header.blog-header h2{
+  color: rgb(9, 137, 9);
+
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+  
+}
+
+ 
+
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+#blog .blog-details {
+  width: 50%;
+}
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s ease;
+}
+#blog .blog-details a::after{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+#blog .blog-details a:hover{
+  color: #a40c0c;
+}
+#blog .blog-details a:hover::after{
+  background-color: #a40c0c;
+}
+#blog .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #d8d3d3;
+  z-index: -9;
+}
+
+
+
+
+
+
+
 
 
 
@@ -629,6 +704,9 @@ footer .copyright{
 
 
 @media (max-width:799px) {
+  .section-p1{
+    padding: 40px 40px;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
@@ -644,6 +722,9 @@ footer .copyright{
     padding: 80px 0 0 10px;
     transition: 0.3s;
   }
+  #navbar.active{
+    right: 0px;
+  }
   #navbar li{
     margin-bottom: 25px;
   }
@@ -657,6 +738,7 @@ footer .copyright{
     padding-left: 20px;
   }
   #close {
+    display: initial;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -666,14 +748,124 @@ footer .copyright{
   #lg-bag {
     display: none;
   }
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+  #feature {
+    justify-content: center;
+  }
+  #feature .fe-box{
+    margin: 15px 15px;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  #banner {
+    height: 20vh;
+  }
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3 {
+    padding: 0 40px;
+  }
+  #banner3 .banner-box {
+    width: 28%;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
 }  
 
+
+
+
+
 @media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
   #header {
-      
     padding: 10px 30px;
   }
-  
-   
-    
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #feature {
+    justify-content: space-between;
+  }
+  #feature .fe-box{
+    margin: 0 0 15px 0;
+    width: 155px;
+  }
+  #product1 .pro {
+    width: 100%;
+  }
+  #banner {
+    height: 40vh;
+  }
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 40px 20px;
+  }
+  #banner3 .banner-box{
+    width: 100%;
+  }
+  #newsletter{
+    padding: 40px 20px;
+  }
+  #newsletter .form{
+    width: 100%;
+  }
+  #footer .copyright{
+    text-align: start;
+  }
+
+/* product details page */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #prodetails .single-pro-details{
+    width: 100%;
+  }
+  /* blog page*/
+  #blog {
+    padding: 100px 20px 0 10px ;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog.blog-img{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details{
+    width: 100%;
+  }
 }
